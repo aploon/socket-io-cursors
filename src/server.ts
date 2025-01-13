@@ -8,7 +8,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
     cors: {
-        origin: "https://socket-io-cursors.onrender.com/", // Si vous utilisez Vite (port par défaut)
+        origin: "https://socket-io-cursors.onrender.com", // Si vous utilisez Vite (port par défaut)
         methods: ["GET", "POST"]
     }
 });
